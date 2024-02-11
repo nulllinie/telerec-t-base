@@ -1,6 +1,6 @@
 [submodule "roles/system"]
 	path = roles/system
-	url = https://github.com/ct-Open-Source/telerec-t-debian.git
+	url = git@github.com:nulllinie/telerec-t-debian.git
 	branch = main
 [submodule "roles/compose_hull"]
 	path = roles/compose_hull
