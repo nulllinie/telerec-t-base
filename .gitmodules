@@ -12,7 +12,7 @@
 	branch = main
 [submodule "roles/portainer"]
 	path = roles/portainer
-	url = git@github.com:nulllinie/telerect-t-portainer.git
+    url = git@github.com:nulllinie/telerec-t-portainer.git
 	branch = main
 [submodule "roles/watchtower"]
 	path = roles/watchtower
