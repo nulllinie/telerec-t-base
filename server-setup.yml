@@ -1,0 +1,27 @@
+- hosts: server
+  become: true
+  tasks:
+    - name: Set service_cfg to traefik
+      set_fact:
+        service_cfg: "{{ traefik }}"
+    - name: Deploy Traefik
+      include_role:
+        name: traefik
+    - name: Set service_cfg to watchtower
+      set_fact:
+        service_cfg: "{{ watchtower }}"
+    - name: Deploy Watchtower
+      include_role:
+        name: watchtower
+    - name: Set service_cfg to autoheal
+      set_fact:
+        service_cfg: "{{ autoheal }}"
+    - name: Deploy Autoheal
+      include_role:
+        name: autoheal
+    - name: Set service_cfg to portainer
+      set_fact:
+        service_cfg: "{{ portainer }}"
+    - name: Deploy Portainer
+      include_role:
+        name: portainer
